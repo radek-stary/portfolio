@@ -1,0 +1,295 @@
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+
+        <!-- desperate tryes :P
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script> -->
+
+
+
+         <!-- jQuery -->
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous"
+        />
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+        />
+        <link rel="stylesheet" href="styles.css" />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+
+        <!-- fonts from google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Overpass:wght@700;800&display=swap"
+          rel="stylesheet"
+        />
+
+       
+
+        <script type="text/javascript" src="./script.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+        <title>Portfolio - Radek Starý</title>
+      </head>
+      <body>
+        <nav
+          class="navbar sticky-top  navbar-expand-lg navbar-ligh nav-justified nav-fill  bg-* "
+        >
+          <div class="container-fluid navbarLogoAndItems">
+            <a class="navbar-brand" href="#"><span><h4 class="d-flex"><strong>RS</strong></h4></a>
+            <!-- <i class="bi bi-braces"></i> -->
+
+            <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav">
+                <li class="nav-item scrollToProjectButton">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    ><code><span class="visibleInLargeWidth">1.</span> Projekty</code></a
+                  >
+                </li>
+                <li class="nav-item scrollToAboutMeButton">
+                  <a class="nav-link" href="#"><code><span class="visibleInLargeWidth">2.</span> O mně</code></a>
+                </li>
+                <li class="nav-item scrollToContactButton">
+                  <a class="nav-link" href="#"><code><span class="visibleInLargeWidth">3.</span> Kontakt</code></a>
+                </li>
+                <li>
+                  <a class="nav-link" target="_blank" href="../Radek.docx"><button class="btn btn-outline-success button"><code>Životopis</code></button></a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <header>
+          <div class="container headerContainer">
+            <div class="row">
+              <div class="col-lg-12 leftHeaderSide">
+                <div class="mainContent">
+                  <div class="mainContentHeadingPart">
+                  <code>Ahoj,</code>
+                  <h1>
+                    Já jsem Radek a jsem
+                    <br /></h1>
+                    <h1 class="text-light">Front-end Developer
+                  </h1>
+                  <p>
+                    Pracuji převážně v jazyku Javascript, Typescript
+                    <br />
+                    a React.js Dále dělám ve firebase
+                  </p>
+                  <br />
+                </div>
+                  
+                  <div class="headerButtons">
+                    <button class="btn btn-lg btn-outline-success button buttonMain scrollToProjectButton">
+                      Pojďme se kouknout na moje projekty
+                    </button>
+                    <br />
+                    <button class="btn btn-link">
+                      <code class="scrollToContactButton">nebo zjistěte něco o mně</code>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="col-lg-6 personImage"> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="socials">
+           <!-- facebook link -->
+            <a target="_blank" href="https://www.facebook.com/radek.stary.904/">
+            <i role="button" class="bi bi-facebook"></i>
+          </a>
+            <br />
+
+           <!-- Github link -->
+           <a target="_blank" href="https://github.com/forgeManNation">
+            <i role="button" class="bi bi-github"></i>
+          </a>
+            <br />
+           
+            <!-- Email link -->
+            <i role="button" onclick="copyEmailToClipboard()" class="bi bi-envelope"></i><br />
+          </div>
+        </header>
+
+        <section class="projects">
+          <h4 class="">Projekty</h4>
+      
+
+          <div class="project">
+            <h2>Mapa mezivládních organizací</h2>
+            <p>Interaktivní mapa, která ukazuje mezivládní organizace. Data vznikla pomocí dat z <a href="https://www.cia.gov/the-world-factbook/">World Fact Book.</a> 
+              JSON soubor, obsahující data organizací, byl vytvořen s pythonem, metodou data scraping. Aplikace je vytvořena v Reactu a v Typescriptu, za využití grafické knihovny Tailwind a mapa potom pomocí React-Leaflet.</p>
+           
+              <code>
+              Typescript React.js Tailwind Leaflet Python
+            </code>
+
+            <p>
+              <a target="_blank" href = "https://igomap.web.app/"><i class="bi bi-box-arrow-up-right"></i></a>
+              <a target="_blank" href = "https://github.com/forgeManNation/igo_map">&nbsp;&nbsp;&nbsp;<i class="bi bi-github"></i></a>
+            </p>
+          </div>
+          <div class="project">
+            <h2>Analýza kompetetivních hypotéz</h2>
+            <p>
+              Kdo zabil kenedyho? Je ve fotbalu důležitější silná obrana nebo útok? Když nemáte numerická data ale spoustu důkazů a hypotéz, použijte
+              tuhle aplikaci. 
+              <br/>
+              Po vyplnění analýzy se vám ukáže výsledná pravděpodobnost v procentech. Aplikace vytvořena v Reactu. Grafické rozhraní je kombinací Bootstrap 5 a Sass.  
+               Tato aplikace využívá jak user-side tak server-side databázi, Redux a Fireabse. 
+            </p>
+            <code>
+            Javascript React.js Redux Bootstrap Firebase (Firestore, Authentification) Sass Leaflet 
+          </code>
+          <p>
+            <a target="_blank" href = "https://analysis-of-comp-hypothesis.web.app"><i class="bi bi-box-arrow-up-right"></i></a>
+            <a target="_blank" href = "https://github.com/forgeManNation/analysis_of_competing_hypothesis.git ">&nbsp;&nbsp;&nbsp;<i class="bi bi-github"></i></a>
+          </p>
+          </div>
+          <div class="project">
+            <h2>Event Miner</h2>
+            <p>
+              Čistě frontend aplikace pro poznávání časových, geografických a ostatních údajů v textu. Aplikace vytvořená při stáži u jedné nadnárodní korporace, kvůli ochraně dat je k dispozici pouze případová studie. Aplikace je psána v Reactu a s využitím Bootstrap 4. 
+            </p>
+            <code>
+              Javascript React.js Bootstrap
+            </code>
+          </div>
+          <div class="project">
+            <h2>Deník</h2>
+            <p>
+              Online deník vytvořený pro cestovatele. Užicatel může přidávat obráyky mapy a libovolné množství stránek deníku. Vytvořen v React.js, dále využito firebase cloud storage, firestore a fireauth, grafika  v Scss, routování pomocí React Routeru.
+            </p>
+            <code>
+              Typescript React.js Sass React-Router Firebase (Firestore, Authentification, Cloud Storage)
+            </code>
+          </div>
+        </section>
+
+        <section class="aboutMe">
+          <h4>Něco o mně</h4>
+          <div class="aboutMeContent">
+          <div class="container">
+            <div class="row">
+            <div class="col-md-6">
+              <code>Úvod</code>
+          <p>
+          Jmenuji se Radek Starý a bydlím v Novém Městě na Moravě. Je mi 19 let a studuji poslední ročník průmyslové školy ve Žďáře nad Sázavou, obor Informační Technologie.
+        </p>
+        <code>Certifikát z anglického jazyka</code>
+                          <p>
+                            Úspěšně jsem složil <a href="./certifikat">certifikát z anglického jazyka</a> na úrovni CAE
+                          </p>
+                          
+                          
+      </div>
+                          <div class=" col-md-6 logos">
+                            <code>Technologie které ovládám</code>
+                            <p>
+                              <!-- <br/><br /> -->
+                               Aktivně programuji poslední 3 roky. Programuji primárně v Javascriptu, Typescriptu a v knihovně React.
+                              <br/>
+                              Mám zkušenosti také s Node.js, Pythonem, C# a s ekosystémem Firebase.
+                              <br/>
+                              Bez problému se ale naučím i nové technologie. 
+                            </p>
+                          <div class="container">
+                              <div class="row">
+                              </div>
+                              <div class="row logosGrid">
+                                  <div class="col-sm-4"><img src="./logos/javascript.png" /></div>
+                                  <div class="col-sm-4"><img src="./logos/typescript.png" /></div>
+                                  <div class="col-sm-4"><img src="./logos/React.png" /></div>
+                                  <div class="col-sm-4"><img src="./logos/Bootstrap.png" /></div>
+                                  <div class="col-sm-4"><img src="./logos/tailwind.svg" /></div>
+                                  <div class="col-sm-4"><img src="./logos/sass.svg" /></div>
+                                  <div class="col-sm-4"><img src="./logos/redux.svg" /></div>
+                                  <div class="col-sm-4"><img src="./logos/Node.js.png" /></div>
+                                  <div class="col-sm-4"><img src="./logos/firebase.svg" /></div>
+                              </div>
+                        </div>
+                        </div>
+               </div> 
+              </div>
+          
+        </section>
+
+        <section class="contact">
+          <h4 class="">Neváhejte mně kontaktovat</h4>
+          <div class="contactsBigContainer">
+          <div class="container contactsContainer">
+                
+              <div>
+                <button class=" btn btn-outline-success button" role="button">
+                  <a href="tel:+4207315198">
+                  <i class="bi bi-telephone"></i>&nbsp;&nbsp;Telefon: 731 519 819<br />
+                  </a>
+                </button>
+                <p class="copyToClipboardButton" onclick="copyTelephoneToClipboard()" >+ Uložit do schránky</p>
+              </div>
+
+                <div class="flex flex-col">
+                  <button class="btn btn-outline-success button" role="button">
+                    <a href="mailto:radekstary23@gmail.com">
+                    <i class="bi bi-envelope"></i>&nbsp;&nbsp;&nbsp;Email:
+                    radekstary23@gmail.com
+                  </a>
+                  
+                  </button>
+                  <p class="copyToClipboardButton"  onclick="copyEmailToClipboard()">+ Uložit do schránky</p>
+                </div>
+
+            </div>
+          </div>
+          </div>
+        </section>
+
+        <footer>
+          <p>developed and designed by Radek Starý</p>
+        </footer>
+
+        <div class="alert alert-success alert-dismissible  d-flex align-items-center fade" role="alert">
+                <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Primary:"><use xlink:href="#check-circle-fill"/></svg>
+                <div>
+                        Obsah uložen do schránky
+                </div>
+                <button type="button" class="btn-close" onclick="closeAlert()" aria-label="Close"></button>
+        </div>
+
+        
+      </body>
+    </html>
