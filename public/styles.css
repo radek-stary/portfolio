@@ -14,8 +14,8 @@
   --blue-gradient: linear-gradient(
     97deg,
     rgba(27, 45, 61, 1) 44%,
-    rgba(34, 51, 66, 1) 64%,
-    rgb(36, 59, 87) 100%
+    #223342 64%,
+    #243b57 100%
   );
 }
 
@@ -73,6 +73,13 @@ h4 {
   transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
+.scrollToContactButton:outline,
+.scrollToContactButton:focus,
+.scrollToContactButton.active {
+  outline: none !important;
+  border: none !important;
+}
+
 @media screen and (min-width: 990px) {
   #navbarSupportedContent {
     justify-content: end;
@@ -94,6 +101,9 @@ h4 {
 @media screen and (max-width: 990px) {
   .visibleInLargeWidth {
     display: none;
+  }
+  .navbar {
+    padding-left: 20px !important;
   }
   .project {
     margin-left: 10px !important;
@@ -160,7 +170,6 @@ nav .nav-item :hover {
 #logo {
   margin: 0;
 }
-
 .contactActionButton {
   margin-left: 10px;
   margin-right: 10px;
