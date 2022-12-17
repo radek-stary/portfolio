@@ -71,8 +71,6 @@ h4 {
   transform: translateY(0px);
   background-color: var(--dark-blue);
   transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-
-  /* transition: all 2.25s cubic-bezier(0.645, 0.045, 0.355, 1); */
 }
 
 @media screen and (min-width: 990px) {
@@ -97,10 +95,13 @@ h4 {
   .visibleInLargeWidth {
     display: none;
   }
+  .project {
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+  }
 
-  .navbar {
-    /* background-color: var(--dark-blue) !important;
-    border-bottom-width: 3px !important; */
+  .navbarLogoAndItems {
+    margin-left: 0 !important;
   }
 }
 
@@ -140,11 +141,29 @@ h4 {
   align-items: center;
 }
 
+a > code {
+  color: var(--emerald-green);
+  /* color: inherit; */
+}
+
+nav .nav-item :hover {
+  color: var(--emerald-green-code);
+}
+
 .nav-item > a,
 .nav-item > i,
 .navbar-brand,
 .navbar-toggler-icon {
   color: var(--emerald-green);
+}
+
+#logo {
+  margin: 0;
+}
+
+.contactActionButton {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .socials-navbar {
@@ -270,7 +289,7 @@ code {
 .copyToClipboardButton {
   cursor: pointer;
   margin-top: 1.3vh;
-  margin-left: 2.5vh;
+  margin-left: 5vh;
 }
 
 .copyToClipboardButton:hover {
