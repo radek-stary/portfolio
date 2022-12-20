@@ -30,7 +30,6 @@
 
 body {
   color: var(--text-color) !important;
-  /* font-weight: bolder; */
   font-family: "Overpass", sans-serif;
   background: var(--blue-gradient);
 }
@@ -139,6 +138,21 @@ h4 {
   }
 }
 
+@media screen and (min-width: 1360px) {
+  .mainContent {
+    margin-left: 23vh;
+  }
+
+  .buttonMain {
+    padding: 11px 21px;
+    font-size: 21px;
+    border-radius: 10px;
+  }
+  .mainContentHeadingPart {
+    margin-bottom: 145px;
+  }
+}
+
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%2343a7ac' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
@@ -177,7 +191,6 @@ h4 {
 
 a > code {
   color: var(--emerald-green);
-  /* color: inherit; */
 }
 
 nav .nav-item :hover {
@@ -213,7 +226,7 @@ nav .nav-item :hover {
   transition: color 100ms linear;
 }
 
-.socials i:hover {
+i:hover {
   color: #2c5e9a;
   transition: color 100ms linear;
 }
@@ -253,21 +266,6 @@ code {
   text-decoration-color: var(--decorative-color);
 }
 
-@media screen and (min-width: 1360px) {
-  .mainContent {
-    margin-left: 23vh;
-  }
-
-  .buttonMain {
-    padding: 11px 21px;
-    font-size: 21px;
-    border-radius: 10px;
-  }
-  .mainContentHeadingPart {
-    margin-bottom: 145px;
-  }
-}
-
 /* PROJECTS SECTION */
 
 .projects {
@@ -293,7 +291,7 @@ code {
   padding-right: 12vh;
 }
 #englishTestResultsScreenshot {
-  margin-top: 2vh;
+  margin-top: 1vh;
   border: 2px solid var(--decorative-color);
   width: 100%;
 }
@@ -355,8 +353,7 @@ code {
 footer {
   display: flex;
   justify-content: center;
-  background-color: rgb(32, 51, 69);
-  /* background-color: var(--blue-gradient); */
+  background-color: #203345;
 }
 footer > p {
   color: var(--text-color);
