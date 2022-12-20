@@ -278,8 +278,7 @@ code {
   padding: 5vh;
   margin: 10vh;
   border-radius: 5px;
-  border: 2px solid #2a4f6b;
-  /* var(--emerald-green-lighter); */
+  border: 2px solid var(--decorative-color);
   background-color: var(--dark-blue);
 }
 
@@ -292,6 +291,11 @@ code {
 .aboutMeContent .col-md-6 {
   padding-left: 12vh;
   padding-right: 12vh;
+}
+#englishTestResultsScreenshot {
+  margin-top: 2vh;
+  border: 2px solid var(--decorative-color);
+  width: 100%;
 }
 
 .logos img {
