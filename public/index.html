@@ -5,7 +5,6 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         
-
          <!-- jQuery -->
          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
@@ -50,8 +49,6 @@
         >
           <div class="container-fluid navbarLogoAndItems">
             <a class="navbar-brand" href="#"><h4 id = "logo"><strong>RS</strong></h4></a>
-            <!-- <i class="bi bi-braces"></i> -->
-
             <button
           class="navbar-toggler"
           type="button"
@@ -79,7 +76,7 @@
                   <a class="nav-link" href="#"><code><span class="visibleInLargeWidth">3.</span> Kontakt</code></a>
                 </li>
                 <li>
-                  <a class="nav-link" target="_blank" href="../Radek.docx"><button class="btn btn-outline-success button"><code>Životopis</code></button></a>
+                  <a class="nav-link" target="_blank" href="./documents/životopis.pdf"><button class="btn btn-outline-success button"><code>Životopis</code></button></a>
                 </li>
 
               </ul>
@@ -89,7 +86,7 @@
         <header>
           <div class="container headerContainer">
             <div class="row">
-              <div class="col-lg-12 leftHeaderSide">
+              <div class="col-lg-6 leftHeaderSide">
                 <div class="mainContent">
                   <div class="mainContentHeadingPart">
                   <code>Ahoj,</code>
@@ -117,7 +114,8 @@
                   </div>
                 </div>
               </div>
-              <!-- <div class="col-lg-6 personImage"> -->
+              <div class="col-lg-6 personImage">
+                <img src="./portfolio_fotka.png"></img>
               </div>
             </div>
           </div>
@@ -151,25 +149,36 @@
             <h2>Mapa mezivládních organizací</h2>
             <p>Interaktivní mapa, která ukazuje mezivládní organizace. Data vznikla pomocí dat z <a href="https://www.cia.gov/the-world-factbook/">World Fact Book.</a> 
               JSON soubor, obsahující data organizací, byl vytvořen s pythonem, metodou data scraping. Aplikace je vytvořena v Reactu a v Typescriptu, za využití grafické knihovny Tailwind a mapa potom pomocí React-Leaflet.</p>
-           
+              <div class="d-flex flex-row">
+                <div class="d-flex flex-column justify-content-between m-2 leftProjectColumn">
               <code>
               Typescript React.js Tailwind Leaflet Python
             </code>
-
             <p>
               <a target="_blank" href = "https://igomap.web.app/"><i class="bi bi-box-arrow-up-right"></i></a>
               <a target="_blank" href = "https://github.com/forgeManNation/igo_map">&nbsp;&nbsp;&nbsp;<i class="bi bi-github"></i></a>
             </p>
+                </div>
+            <div class="screenshotBox">
+            <img class="screenshot" src="./screenshots/IGOMap1.PNG"></img>
           </div>
+          </div>
+
+          </div>
+
+
           <div class="project">
             <h2>Analýza kompetetivních hypotéz</h2>
             <p>
-              Kdo zabil kenedyho? Je ve fotbalu důležitější silná obrana nebo útok? Když nemáte numerická data ale spoustu důkazů a hypotéz, použijte
+              Kdo zavraždil Kennedyho? Je ve fotbalu důležitější silná obrana nebo útok? Když nemáte numerická data ale spoustu důkazů a hypotéz, použijte
               tuhle aplikaci. 
               <br/>
               Po vyplnění analýzy se vám ukáže výsledná pravděpodobnost v procentech. Aplikace vytvořena v Reactu. Grafické rozhraní je kombinací Bootstrap 5 a Sass.  
                Tato aplikace využívá jak user-side tak server-side databázi, Redux a Fireabse. 
             </p>
+
+            <div class="d-flex flex-row">
+              <div class="d-flex flex-column justify-content-between m-2 leftProjectColumn">
             <code>
             Javascript React.js Redux Bootstrap Firebase (Firestore, Authentification) Sass Leaflet 
           </code>
@@ -178,23 +187,55 @@
             <a target="_blank" href = "https://github.com/forgeManNation/analysis_of_competing_hypothesis.git ">&nbsp;&nbsp;&nbsp;<i class="bi bi-github"></i></a>
           </p>
           </div>
+          <div class="screenshotBox">
+            <img class="screenshot" src="./screenshots/ACH1.PNG"></img>
+          </div>
+
+          </div>
+          </div>
+
+
           <div class="project">
             <h2>Event Miner</h2>
             <p>
               Čistě frontend aplikace pro poznávání časových, geografických a ostatních údajů v textu. Aplikace vytvořená při stáži u jedné nadnárodní korporace, kvůli ochraně dat je k dispozici pouze případová studie. Aplikace je psána v Reactu a s využitím Bootstrap 4. 
-            </p>
-            <code>
-              Javascript React.js Bootstrap
-            </code>
-          </div>
+            </p> 
+            <div class="d-flex flex-row">
+              <div class="d-flex flex-column justify-content-between m-2 leftProjectColumn">
+                <code>
+                  Javascript React.js Bootstrap
+                </code>
+                <p>
+                <a target="_blank" href = "https://www.figma.com/file/hKyuthnlHkB4y4DiGnbliM/Untitled?node-id=0%3A1&t=nc6JoDIguam6ANvs-0"><i class="bi bi-box-arrow-up-right"></i></a>
+                </p>
+              </div>
+
+            <div class="screenshotBox">
+              <img class="screenshot" src="./screenshots/eventMiner2.PNG"></img>
+            </div>
+            </div>
+        </div>
+
+
           <div class="project">
             <h2>Deník</h2>
             <p>
-              Online deník vytvořený pro cestovatele. Užicatel může přidávat obráyky mapy a libovolné množství stránek deníku. Vytvořen v React.js, dále využito firebase cloud storage, firestore a fireauth, grafika  v Scss, routování pomocí React Routeru.
+              Online deník vytvořený pro cestovatele. Uživatel může přidávat obráyky mapy a libovolné množství stránek. Vytvořen v React.js, dále využito firebase cloud storage, firestore a fireauth, grafika  v Scss, routování pomocí React Routeru.
             </p>
+            <div class="d-flex flex-row">
+            <div class="d-flex flex-column justify-content-between m-2">
             <code>
               Typescript React.js Sass React-Router Firebase (Firestore, Authentification, Cloud Storage)
             </code>
+            <p>
+              <a target="_blank" href = "https://diary-afe01.web.app/"><i class="bi bi-box-arrow-up-right"></i></a>
+              <a target="_blank" href = "https://github.com/forgeManNation/diary.git">&nbsp;&nbsp;&nbsp;<i class="bi bi-github"></i></a>
+            </p>
+          </div>
+            <div class="screenshotBox">
+              <img class="screenshot" src="./screenshots/diary1.PNG"></img>
+            </div>
+          </div>
           </div>
         </section>
 
@@ -218,7 +259,6 @@
                           <div class=" col-md-6 logos">
                             <code>Technologie které ovládám</code>
                             <p>
-                              <!-- <br/><br /> -->
                                Aktivně programuji poslední 3 roky. Programuji primárně v Javascriptu, Typescriptu a v knihovně React.
                               <br/>
                               Mám zkušenosti také s Node.js, Pythonem, C# a s ekosystémem Firebase.
@@ -254,7 +294,7 @@
               <div>
                 <button class=" btn btn-outline-success button contactActionButton" role="button">
                   <a href="tel:+4207315198">
-                  <i class="bi bi-telephone"></i>&nbsp;&nbsp;Telefon: 731 519 819<br />
+                  <i class="bi bi-telephone"></i>&nbsp;&nbsp;&nbsp;Telefon: 731 519 819<br />
                   </a>
                 </button>
                 <p class="copyToClipboardButton" onclick="copyTelephoneToClipboard()" >+ Uložit do schránky</p>
