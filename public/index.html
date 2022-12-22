@@ -221,7 +221,7 @@
           <div class="project">
             <h2>Deník</h2>
             <p>
-              Online deník vytvořený pro cestovatele. Uživatel může přidávat obráyky mapy a libovolné množství stránek. Vytvořen v React.js, dále využito firebase cloud storage, firestore a fireauth, grafika  v Scss, routování pomocí React Routeru.
+              Online deník vytvořený pro cestovatele. Uživatel může přidávat obrázky, mapy a libovolné množství stránek. Vytvořen v React.js, dále využito firebase cloud storage, firestore a fireauth, grafika  v Scss, routování pomocí React Routeru.
             </p>
             <div class="d-flex flex-row">
             <div class="d-flex flex-column justify-content-between m-2">
@@ -294,20 +294,16 @@
           <div class="container contactsContainer">
                 
               <div>
-                <button class=" btn btn-outline-success button contactActionButton" role="button">
-                  <a href="tel:+4207315198">
+                <button onclick="location.href='tel:+4207315198';" class=" btn btn-outline-success button contactActionButton" role="button">
                   <i class="bi bi-telephone"></i>&nbsp;&nbsp;&nbsp;Telefon: 731 519 819<br />
-                  </a>
                 </button>
                 <p class="copyToClipboardButton" onclick="copyTelephoneToClipboard()" >+ Uložit do schránky</p>
               </div>
 
                 <div class="flex flex-col">
-                  <button class="btn btn-outline-success button contactActionButton" role="button">
-                    <a href="mailto:radekstary23@gmail.com">
+                  <button onclick="location.href='mailto:radekstary23@gmail.com';" class="btn btn-outline-success button contactActionButton" role="button">
                     <i class="bi bi-envelope"></i>&nbsp;&nbsp;&nbsp;Email:
                     radekstary23@gmail.com
-                  </a>
                   
                   </button>
                   <p class="copyToClipboardButton"  onclick="copyEmailToClipboard()">+ Uložit do schránky</p>
