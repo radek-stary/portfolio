@@ -139,6 +139,10 @@ h4 {
 }
 
 @media screen and (min-width: 1360px) {
+  .aboutMeContent .col-md-6 {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
   .mainContent {
     margin-left: 23vh;
   }
@@ -280,6 +284,10 @@ code {
   background-color: var(--dark-blue);
 }
 
+.projectLinkIcon {
+  margin: 10px;
+}
+
 /* ABOUT ME SECTION */
 
 .aboutMeContent {
@@ -287,8 +295,8 @@ code {
 }
 
 .aboutMeContent .col-md-6 {
-  padding-left: 12%;
-  padding-right: 12%;
+  padding-left: 8%;
+  padding-right: 8%;
 }
 #englishTestResultsScreenshot {
   margin-top: 1vh;
@@ -313,6 +321,10 @@ code {
 .contact button {
   font-size: larger;
   cursor: pointer;
+}
+
+.contactActionIcon {
+  padding-right: 15px;
 }
 
 .contactsBigContainer {
