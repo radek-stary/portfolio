@@ -55,6 +55,10 @@ section {
   margin-bottom: 4px !important;
 }
 
+.headerButtons {
+  margin-bottom: 20px;
+}
+
 h4 {
   text-align: center;
 }
