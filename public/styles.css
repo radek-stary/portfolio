@@ -6,7 +6,8 @@
   --darker-blue: #101a23;
   --white: #ffffff;
   --decorative-color: #174d71;
-  --emerald-green: #43a7ac;
+  --emerald-green: #34c2aa;
+  --emerald-green-light: #64ffda;
   --emerald-green-code: #367d8d;
   --emerald-green-lighter: #67b478;
   --dark-green: #093932;
@@ -26,6 +27,7 @@
 .button:hover {
   background-color: var(--dark-green) !important;
   color: var(--emerald-green);
+  color: var(--emerald-green-light);
 }
 
 body {
@@ -45,8 +47,33 @@ section {
   padding: 7vh;
 }
 
+.firstHeadline {
+  margin-bottom: 3px;
+}
+
+.greeting {
+  margin-bottom: 4px !important;
+}
+
+.headerButtons {
+  margin-bottom: 20px;
+}
+
 h4 {
   text-align: center;
+}
+.greenMonospace {
+  color: var(--emerald-green);
+  font-size: large;
+  font-family: var(--bs-font-monospace);
+  margin: 0;
+  padding: 0;
+  font-family: "Fira Mono";
+}
+
+.greenMonospaceTitle {
+  font-weight: lighter;
+  margin-bottom: 7px;
 }
 
 .navbar {
@@ -55,9 +82,9 @@ h4 {
   transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-.navbar code {
+.navbar .greenMonospace {
   font-size: large !important;
-  font-weight: bold;
+  font-weight: lighter;
 }
 
 .transparent {
@@ -77,6 +104,14 @@ h4 {
 .scrollToContactButton.active {
   outline: none !important;
   border: none !important;
+}
+
+.mainContentHeadingPart h1 {
+  font-size: 4.4rem !important;
+}
+
+.mainContentHeadingPart p {
+  font-size: larger;
 }
 
 .leftProjectColumn {
@@ -153,7 +188,7 @@ h4 {
     border-radius: 10px;
   }
   .mainContentHeadingPart {
-    margin-bottom: 145px;
+    margin-bottom: 94px;
   }
 }
 
@@ -216,6 +251,13 @@ nav .nav-item :hover {
   margin-right: 10px;
 }
 
+.contactActionButton:hover {
+  color: var(--emerald-green-light);
+}
+.contactActionButton i :hover {
+  color: var(--emerald-green-light);
+}
+
 .socials-navbar {
   white-space: nowrap;
   display: flex;
@@ -236,7 +278,8 @@ i:hover {
 }
 
 header {
-  padding-top: 10vh;
+  min-height: 100vh;
+  padding-top: 11.8vh;
 }
 .personImage {
   display: flex;
@@ -368,6 +411,7 @@ footer {
   background-color: #203345;
 }
 footer > p {
+  font-size: larger;
   color: var(--text-color);
   padding: 5vh;
   margin: 0;

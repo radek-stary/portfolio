@@ -28,7 +28,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-          href="https://fonts.googleapis.com/css2?family=Overpass:wght@700;800&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Overpass:wght@700;800;600&display=swap"
           rel="stylesheet"
         />
 
@@ -67,17 +67,17 @@
               <ul class="navbar-nav">
                 <li class="nav-item scrollToProjectButton">
                   <a class="nav-link active" aria-current="page" href="#"
-                    ><code><span class="visibleInLargeWidth">1.</span> Projekty</code></a
+                    ><p class="greenMonospace"><span class="visibleInLargeWidth">1.</span> Projekty</p></a
                   >
                 </li>
                 <li class="nav-item scrollToAboutMeButton">
-                  <a class="nav-link" href="#"><code><span class="visibleInLargeWidth">2.</span> O mně</code></a>
+                  <a class="nav-link" href="#"><p class="greenMonospace"><span class="visibleInLargeWidth">2.</span> O mně</p></a>
                 </li>
                 <li class="nav-item scrollToContactButton">
-                  <a class="nav-link" href="#"><code><span class="visibleInLargeWidth">3.</span> Kontakt</code></a>
+                  <a class="nav-link" href="#"><p class="greenMonospace"><span class="visibleInLargeWidth">3.</span> Kontakt</p></a>
                 </li>
                 <li>
-                  <a class="nav-link" target="_blank" href="./documents/životopis.pdf"><button class="btn btn-outline-success button"><code>Životopis</code></button></a>
+                  <a class="nav-link" target="_blank" href="./documents/životopis.pdf"><button class="btn btn-outline-success button"><p class="greenMonospace">Životopis</p></button></a>
                 </li>
 
               </ul>
@@ -86,13 +86,12 @@
         </nav>
         <header>
           <div class="container headerContainer">
-            <div class="row">
-              <div class="col-lg-6 leftHeaderSide">
+           
                 <div class="mainContent">
                   <div class="mainContentHeadingPart">
-                  <code>Ahoj,</code>
-                  <h1>
-                    Já jsem Radek a jsem
+                  <p class="greenMonospace greeting">Ahoj,</p>  
+                  <h1 class="firstHeadline">
+                    Já jsem Radek a&nbsp;jsem
                     <br /></h1>
                     <h1 class="text-light">Front-end Developer
                   </h1>
@@ -109,16 +108,11 @@
                       Pojďme se kouknout na moje projekty
                     </button>
                     <br />
-                    <button class="btn btn-link scrollToContactButton">
-                      <code>nebo zjistěte něco o mně</code>
+                    <button class="btn btn-link scrollToAboutMeButton">
+                      <p class="greenMonospace">nebo zjistěte něco o mně</p>
                     </button>
                   </div>
                 </div>
-              </div>
-              <div class="col-lg-6 personImage">
-                <img src="./portfolio_fotka.png"></img>
-              </div>
-            </div>
           </div>
 
           <div class="socials">
@@ -152,9 +146,8 @@
               JSON soubor, obsahující data organizací, byl vytvořen s pythonem, metodou data scraping. Aplikace je vytvořena v Reactu a v Typescriptu za využití grafické knihovny Tailwind a mapa potom pomocí React-Leaflet.</p>
               <div class="d-flex flex-row">
                 <div class="d-flex flex-column justify-content-between m-2 leftProjectColumn">
-              <code>
+              <p class="greenMonospace">
               Typescript React.js Tailwind Leaflet Python
-            </code>
             <p>
               <a target="_blank" href = "https://igomap.web.app/"><i class="projectLinkIcon bi bi-box-arrow-up-right"></i></a>
               <a target="_blank" href = "https://github.com/forgeManNation/igo_map"><i class="projectLinkIcon bi bi-github"></i></a>
@@ -180,9 +173,9 @@
 
             <div class="d-flex flex-row">
               <div class="d-flex flex-column justify-content-between m-2 leftProjectColumn">
-            <code>
+            <p class="greenMonospace">
             Javascript React.js Redux Bootstrap Firebase (Firestore, Authentification) Sass Leaflet 
-          </code>
+            </p>
           <p>
             <a target="_blank" href = "https://analysis-of-comp-hypothesis.web.app"><i class="projectLinkIcon bi bi-box-arrow-up-right"></i></a>
             <a target="_blank" href = "https://github.com/forgeManNation/analysis_of_competing_hypothesis.git "><i class="projectLinkIcon bi bi-github"></i></a>
@@ -203,9 +196,9 @@
             </p> 
             <div class="d-flex flex-row">
               <div class="d-flex flex-column justify-content-between m-2 leftProjectColumn">
-                <code>
+                <p class="greenMonospace">
                   Javascript React.js Bootstrap
-                </code>
+                </p>
                 <p>
                 <a target="_blank" href = "https://www.figma.com/file/hKyuthnlHkB4y4DiGnbliM/Untitled?node-id=0%3A1&t=nc6JoDIguam6ANvs-0"><i class="bi bi-box-arrow-up-right"></i></a>
                 </p>
@@ -225,9 +218,9 @@
             </p>
             <div class="d-flex flex-row">
             <div class="d-flex flex-column justify-content-between m-2">
-            <code>
+            <p class="greenMonospace">
               Typescript React.js Sass React-Router Firebase (Firestore, Authentification, Cloud Storage)
-            </code>
+            </p>
             <p>
               <a target="_blank" href = "https://diary-afe01.web.app/"><i class="projectLinkIcon bi bi-box-arrow-up-right"></i></a>
               <a target="_blank" href = "https://github.com/forgeManNation/diary.git"><i class="projectLinkIcon bi bi-github"></i></a>
@@ -246,11 +239,11 @@
           <div class="container">
             <div class="row">
             <div class="col-md-6">
-              <code>Úvod</code>
+              <p class="greenMonospace">Úvod</p>
           <p>
           Jmenuji se Radek Starý a bydlím v Novém Městě na Moravě. Je mi 19 let a studuji poslední ročník průmyslové školy ve Žďáře nad Sázavou, obor Informační technologie.
         </p>
-        <code>Certifikát z anglického jazyka</code>
+        <p class="greenMonospace">Certifikát z anglického jazyka</p>
                           <p>
                             Úspěšně jsem složil Zkoušky Cambridge English na úrovni C1 (CAE)
                           </p>
@@ -259,7 +252,7 @@
                           
       </div>
                           <div class=" col-md-6 logos">
-                            <code>Technologie, které ovládám</code>
+                            <p class="greenMonospace">Technologie, které ovládám</p>
                             <p>
                                Aktivně programuji poslední 3 roky. Programuji primárně v Javascriptu, Typescriptu a v knihovně React.
                               <br/>
@@ -315,7 +308,7 @@
         </section>
 
         <footer>
-          <p>developed and designed by Radek Starý</p>
+          <p><strong>developed and designed by Radek Starý</strong></p>
         </footer>
 
         <div class="alert alert-success alert-dismissible  d-flex align-items-center fade" role="alert">
