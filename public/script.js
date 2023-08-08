@@ -35,7 +35,7 @@ function copyEmailToClipboard() {
 }
 
 function copyTelephoneToClipboard() {
-  const telephoneNumber = "+420 731 519 819";
+  const telephoneNumber = "+420 731 819 519";
 
   // Copy the text inside the text field
   navigator.clipboard.writeText(telephoneNumber);
@@ -57,8 +57,10 @@ $(window).resize(function () {
   changePropertiesOnWidthChange();
 });
 
-//when website is scrolled
+//when website is scrolled the navbar either continues to appear or dissapears
 $(window).scroll(function () {
+
+
   //how far is scroll from top of website
   let scrollTop = $(document).scrollTop();
 
@@ -82,33 +84,33 @@ $(window).scroll(function () {
 $(document).ready(function () {
   changePropertiesOnWidthChange();
 
-  //scroll into contact section
-  $(".scrollToContactButton").click(() => {
-    $([document.documentElement, document.body]).animate(
-      {
-        scrollTop: $(".contact").offset().top - $("nav").height(),
-      },
-      700
-    );
-  });
+    //onclick on .scrollToContactButton page scrolls into contact section
+    $(".scrollToContactButton").click(() => {
+      $([document.documentElement, document.body]).animate(
+        {
+          scrollTop: $(".contact").offset().top - $("nav").height(),
+        },
+        700
+      );
+    });
 
-  //scroll into projects section
-  $(".scrollToProjectButton").click(function () {
-    $([document.documentElement, document.body]).animate(
-      {
-        scrollTop: $(".projects").offset().top - $(".navbar").height(),
-      },
-      700
-    );
-  });
+    //onclick on .scrollToProjectButton scrolls into projects section
+    $(".scrollToProjectButton").click(function () {
+      $([document.documentElement, document.body]).animate(
+        {
+          scrollTop: $(".projects").offset().top - $(".navbar").height(),
+        },
+        700
+      );
+    });
 
-  //scroll into aboutMe section
-  $(".scrollToAboutMeButton").click(function () {
-    $([document.documentElement, document.body]).animate(
-      {
-        scrollTop: $(".aboutMe").offset().top - $("nav").height(),
-      },
-      800
-    );
-  });
+    //onclick on .scrollToAboutMeButton page scrolls into aboutMe section
+    $(".scrollToAboutMeButton").click(function () {
+      $([document.documentElement, document.body]).animate(
+        {
+          scrollTop: $(".aboutMe").offset().top - $("nav").height(),
+        },
+        800
+      );
+    });
 });
